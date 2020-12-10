@@ -4,8 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de zapatos</title>
+    <link rel="icon" href="images/shoe.png" type="image/png" />
 </head>
 <body>
-    hola mundo
+    <style>
+
+        table, th, td {
+        border: 1px solid black;
+        }
+        .titulo{
+            color:steelblue;
+            text-align: center;
+        }
+        .cita{
+            font-style: italic;
+        }
+        .tituloSeccionCalzado{
+            color: #337848;
+        }
+        h2,h3{
+            color: rgb(255, 0, 0);
+        }
+    </style>
+    <header>
+        <h1 class = "titulo ">Tienda de zapatos</h1>
+    </header>
+    <main>
+
+        <p>El porqué de las zapatillas</p>
+        <blockquote cite="https://es.wikipedia.org/wiki/Zapatilla"
+        class = "cita">La palabra zapatilla
+        puede referirse al calzado cómodo o de abrigo para estar en casa
+        </blockquote>
+
+        <p>A continuacion tendremos la seccion de <a href="https://www.vans.com.co/mujer/calzado" target="_blank">calzado </a>
+        <h2 class="tituloSeccionCalzado">Sección de Calzado</h2>
+        <p>En esta sección encontrarás diversidad de calzado para todas las edades,
+        géneros, gustos, tipo, deportes, etc.</p>
+
+        <!-- ctrl +k ctrl +c /// o ctrl } /// Para hacer un comentario -->
+    
+        <h2 class="titulo">Menu Principal</h2>
+        <ul>
+            <li>Video</li>
+            <li> <a href="#Contacto"> Contacto </a></li>
+            <li> <a href="#Fundador">Fundador</a> </li>
+            <li> <a href="#Formulario">Formulario</a>  </li>
+        </ul>
+        <ol>
+            <li>Video</li>
+            <li>Contacto</li>
+            <li>Fundador</li>
+        </ol>
+
+        <iframe width="460" height="315"
+        src="https://www.youtube.com/embed/Wm-p9mcN8Yk" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2 id="Contacto">Contacto </h2>
+
+        <table>
+            <caption>Contactos de la tienda por areas</caption>
+            <tr>
+                <th>Areas de la tienda</th>
+                <th>Responsable</th>
+                <th>Telefono</th>
+            </tr>
+            <tr>
+                <td>Calzado hombre</td>
+                <td> <a href="#Fundador">Luisa Pedraza</a> </td>
+                <td>300000000</td>
+            </tr>
+            <tr>
+                <td>Calzado mujer</td>
+                <td>Julian Ochoa</td>
+                <td>3204515301</td>
+            </tr>
+        </table>
+
+        <h2>Fundador</h2>
+
+        <img src="images/Foto001.jpg" alt="propietaria nombre 1"
+        height="515" width="460" id = Fundador>
+
+        <h3 id = "Formulario"> Formulario</h3>
+
+        <form>
+            <label for="nombreCompleto">Nombre Completo</label>
+            <input type="text" id="nombreC" name ="nombreC"
+            placeholder=""Nombres y apellidos" required>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
